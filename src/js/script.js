@@ -90,7 +90,6 @@
       const clickableTrigger = thisProduct.element.querySelector(select.menuProduct.clickable);
   
       /* START: add event listener to clickable trigger on event click */
-      // for (let activeProduct in clickableTrigger)
       clickableTrigger.addEventListener('click', function(event) {
         /* prevent default action for event */
         event.preventDefault();
@@ -101,7 +100,7 @@
   
         /* if there is active product and it's not thisProduct.element, remove class active from it */
         if(thisProduct.element !== activeProduct && activeProduct !== null){
-          activeProduct.classList.remove('active');
+          activeProduct.classList.remove(classNames.menuProduct.wrapperActive);
         }
   
         /* toggle active class on thisProduct.element */
