@@ -262,11 +262,11 @@
         }
       }
 
-      /* multiply price by amount */
-      price *= thisProduct.amountWidget.value;
-
       /* create new value: priceSingle */
       thisProduct.priceSingle = price;
+
+      /* multiply price by amount */
+      price *= thisProduct.amountWidget.value;
 
       // update calculated price in the HTML
       thisProduct.dom.priceElem.innerHTML = price;
@@ -406,6 +406,9 @@
       thisCart.dom.wrapper = element;
 
       thisCart.dom.toggleTrigger = thisCart.dom.wrapper.querySelector(select.cart.toggleTrigger);
+
+      thisCart.dom.productList = thisCart.dom.wrapper.querySelector(select.cart.productList);
+      // console.log(thisCart.dom.productList);
     }
 
     initActions(){
@@ -417,9 +420,11 @@
     }
 
     add(menuProduct){
-      // const thisCart = this;
-
+      const thisCart = this;
+      const generatedHTML = templates.cartProduct(menuProduct);
       console.log('adding product:', menuProduct);
+      const generatedDOM = utils.createDOMFromHTML(generatedHTML);
+      thisCart.dom.productList.appendChild(generatedDOM);
     }
   }
 
