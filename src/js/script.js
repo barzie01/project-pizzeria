@@ -427,8 +427,8 @@
 
         address: thisCart.dom.address.value,
         phone: thisCart.dom.phone.value,
-        totalPrice: thisCart.dom.totalPrice,
-        totalNumber: thisCart.dom.totalNumber,
+        totalPrice: thisCart.totalPrice,
+        totalNumber: thisCart.totalNumber,
         deliveryFee: settings.cart.defaultDeliveryFee,
         products: [],
       };
