@@ -110,6 +110,13 @@ export const settings = {
     notRepeatParam: 'repeat=false',
     repeatParam: 'repeat_ne=false',
   },
+  datePicker: {
+    maxDaysInFuture: 14,
+  },
+  hours: {
+    open: 12,
+    close: 0,
+  }
 };
 
 export const templates = {
