@@ -203,10 +203,10 @@
       }
     ],
     "orders": [],
-    "events": [
+    "event": [
       {
         "id": 1,
-        "date": "2021-01-05",
+        "date": "2021-07-05",
         "hour": "12:30",
         "table": 1,
         "repeat": false,
@@ -256,13 +256,14 @@
       }
     ],
     "booking": [{
-      "id": 5,
-      "date": "2021-07-07",
-      "hour": "18:00",
-      "table": 2,
-      "duration": 2,
-      "ppl": 3,
-      "starters": ["lemonWater"]
+      "id": 1,
+        "date": "2021-07-07",
+        "hour": "12:30",
+        "table": 1,
+        "repeat": false,
+        "duration": 8,
+        "ppl": 3,
+        "starters": []
     }]
     
   }
