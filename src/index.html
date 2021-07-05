@@ -68,101 +68,7 @@
 
   <div id="pages">
     <section id="home">
-      <div class="home-wrapper container">
-        <div class="info-wrapper">
-          <div class="order">
-            <img src="images/home-pictures/pizza-1.jpg" alt="order-online">
-            <h1>Order online</h1>
-            <p>Delicious food delivered to your door</p>
-          </div>
-          <div class="book">
-            <img src="images/home-pictures/pizza-2.jpg" alt="booking">
-            <h1>Book a table</h1>
-            <p>Enjoy atmosphere of Italian cuisine</p>
-          </div>
-          <div class="opening-hrs">
-            <h1>Opening hours</h1>
-            <p>Tue-Sun, 12pm-12am</p>
-          </div>
-        </div>
-        <div class="main-carousel"
-          data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": 3000, "pauseAutoPlayOnHover": "false" }'>
-          <div class="carousel-cell">
-            <img src="images/home-pictures/pizza-3.jpg" alt="opinion">
-            <div class="description">
-              <h1>Amazing service!</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quod animi corrupti sequi? Sunt porro
-                perspiciatis perferendis non suscipit vero eum, accusantium ratione repellat similique necessitatibus
-                consequuntur, praesentium asperiores earum?</p>
-              <span>- Margaret Osborne</span>
-            </div>
-          </div>
-          <div class="carousel-cell">
-            <img src="images/home-pictures/pizza-3.jpg" alt="opinion">
-            <div class="description">
-              <h1>Good snacks</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati praesentium ducimus dolore debitis
-                doloremque laborum nesciunt inventore! Natus consequuntur tempore eveniet esse voluptatibus eius earum,
-                blanditiis reiciendis suscipit, eaque repudiandae.</p>
-              <span>Rupert Sasnov</span>
-            </div>
-          </div>
-          <div class="carousel-cell">
-            <img src="images/home-pictures/pizza-3.jpg" alt="opinion">
-            <div class="description">
-              <h1>Delicious food</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur vitae repudiandae
-                praesentium perferendis quaerat exercitationem assumenda non corporis veritatis nisi aliquid, laborum
-                vel possimus quidem in ab pariatur laboriosam.</p>
-              <span>Kaslik Amanov</span>
-            </div>
-          </div>
-        </div>
-        <div class="gallery-wrapper">
-          <div class="gallery-picture">
-            <img src="images/home-pictures/pizza-4.jpg" alt="gallery-picture">
-            <ul>
-              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-              <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
-            </ul>
-          </div>
-          <div class="gallery-picture">
-            <img src="images/home-pictures/pizza-5.jpg" alt="gallery-picture">
-            <ul>
-              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-              <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
-            </ul>
-          </div>
-          <div class="gallery-picture">
-            <img src="images/home-pictures/pizza-6.jpg" alt="gallery-picture">
-            <ul>
-              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-              <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
-            </ul>
-          </div>
-          <div class="gallery-picture">
-            <img src="images/home-pictures/pizza-7.jpg" alt="gallery-picture">
-            <ul>
-              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-              <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
-            </ul>
-          </div>
-          <div class="gallery-picture">
-            <img src="images/home-pictures/pizza-8.jpg" alt="gallery-picture">
-            <ul>
-              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-              <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
-            </ul>
-          </div>
-          <div class="gallery-picture">
-            <img src="images/home-pictures/pizza-9.jpg" alt="gallery-picture">
-            <ul>
-              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-              <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <div class="home-wrapper container"></div>
     </section>
     <section id="order">
       <div id="product-list" class="product-list container"></div>
@@ -171,6 +77,115 @@
       <div class="booking-wrapper container"></div>
     </section>
   </div>
+
+  <script id="template-home-widget" type="text/x-handlebars-template">
+    <div class="home-container">
+      <div class="row">
+        <div class="order">
+          <a href="#order">
+            <div class="animate">
+              <h2>Order online</h2>
+              <p>Delicious food delivered to your door</p>
+            </div>
+          </a>
+        </div>
+        <div class="book">
+          <a href="#booking">
+            <div class="animate">
+              <h2>Book a table</h2>
+              <p>Enjoy atmosphere of Italian cuisine</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="opening-hrs">
+          <h2>Opening hours</h2>
+          <p>Tue-Sun, 12pm - 12am</p>
+        </div>
+      </div>
+      <div class="main-carousel"
+        data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": 3000, "pauseAutoPlayOnHover": "false" }'>
+        <div class="carousel-cell">
+          <img src="images/home-pictures/pizza-3.jpg" alt="opinion">
+          <div class="description">
+            <h2>Amazing service!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quod animi corrupti sequi? Sunt porro
+              perspiciatis perferendis non suscipit vero eum, accusantium ratione repellat similique necessitatibus
+              consequuntur, praesentium asperiores earum?</p>
+            <span>- Margaret Osborne</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="images/home-pictures/pizza-3.jpg" alt="opinion">
+          <div class="description">
+            <h2>Good snacks</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati praesentium ducimus dolore debitis
+              doloremque laborum nesciunt inventore! Natus consequuntur tempore eveniet esse voluptatibus eius earum,
+              blanditiis reiciendis suscipit, eaque repudiandae.</p>
+            <span>- Rupert Sasnov</span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img src="images/home-pictures/pizza-3.jpg" alt="opinion">
+          <div class="description">
+            <h2>Delicious food</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur vitae repudiandae
+              praesentium perferendis quaerat exercitationem assumenda non corporis veritatis nisi aliquid, laborum
+              vel possimus quidem in ab pariatur laboriosam.</p>
+            <span>- Kaslik Amanov</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-wrapper">
+        <div class="gallery-picture">
+          <img src="images/home-pictures/pizza-4.jpg" alt="gallery-picture">
+          <ul>
+            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+            <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
+        </div>
+        <div class="gallery-picture">
+          <img src="images/home-pictures/pizza-5.jpg" alt="gallery-picture">
+          <ul>
+            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+            <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
+        </div>
+        <div class="gallery-picture">
+          <img src="images/home-pictures/pizza-6.jpg" alt="gallery-picture">
+          <ul>
+            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+            <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
+        </div>
+        <div class="gallery-picture">
+          <img src="images/home-pictures/pizza-7.jpg" alt="gallery-picture">
+          <ul>
+            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+            <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
+        </div>
+        <div class="gallery-picture">
+          <img src="images/home-pictures/pizza-8.jpg" alt="gallery-picture">
+          <ul>
+            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+            <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
+        </div>
+        <div class="gallery-picture">
+          <img src="images/home-pictures/pizza-9.jpg" alt="gallery-picture">
+          <ul>
+            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+            <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <span><a href="#">View more on Instagram</a></span>
+      </footer>
+    </div>
+  </script>
 
   <script id="template-cart-product" type="text/x-handlebars-template">
     <li>
